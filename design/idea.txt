@@ -1,0 +1,13 @@
+Secciones:
+- Inicio y/o Iniciar Sesion
+
+- Seleccionador de categorías (1ra, 3ra, 4ta, 5ta, 6ta, 7ma, 8va, 9na)
+    -> Dentro de la categoria seleccionada:
+        - Lista de jugadores (Traidos de la base)
+        - Agregar y eliminar jugador.
+        (Nombre, apellido, posición, altura, peso)
+        (Se podria ordenar desde el arquero al delantero)
+
+- Sección ADMIN:
+    -> Poder agregar DT.
+    -> Eliminar DT.
