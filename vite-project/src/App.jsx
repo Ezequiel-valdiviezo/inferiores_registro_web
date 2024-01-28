@@ -7,10 +7,14 @@ import Navbar from './components/Navbar'
 function App() {
 
   return (
-    <>
-      <h1>Hola</h1>
+    <div className='fondo'>
+
+    <div className="container-xl bg-white">
       <Navbar />
-    </>
+      <h2>Hola</h2>
+    </div>
+
+    </div>
   )
 }
 
