@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Novedades from './components/Novedades'
+import pintita from './assets/pintita.jpg'
 
 function App() {
 
@@ -42,7 +45,38 @@ function App() {
         </div>
       </div>
 
+      {/* <div className="seccion3">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src={pintita} class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src={pintita} class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src={pintita} class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div> */}
 
+      <div className="seccion4 text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0T7TsrUGB9k?si=LYbnzNGhmLpZdU53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+      </div>
+
+      <Novedades />
+
+
+      <Footer />
     </div>
 
     </div>
