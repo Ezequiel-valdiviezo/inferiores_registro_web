@@ -10,8 +10,23 @@ function App() {
     <div className='fondo'>
 
     <div className="container-xl bg-white">
+
       <Navbar />
-      <h2>Hola</h2>
+
+      <div className="seccion1">
+        <p className='text-white d-flex align-items-center justify-content-center vh-100 font-size-5 fw-bold fs-1'>Gintita un proyecto hecho realidad</p>
+      </div>
+      
+      <div className="seccion2 flex">
+        <div>
+          <h2>Gintita</h2>
+        </div>
+        <div>
+          <h2>Nuestra ubicación</h2>
+        </div>
+      </div>
+
+
     </div>
 
     </div>
