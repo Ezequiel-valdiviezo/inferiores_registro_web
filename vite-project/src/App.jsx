@@ -5,22 +5,28 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Novedades from './components/Novedades'
-import pintita from './assets/pintita.jpg'
+import Flecha from './assets/flecha.png'
+import Pintita from './assets/pintita.jpg'
 
 function App() {
 
   return (
     <div className='fondo'>
 
-    <div className="container-xl bg-white">
+    <div className="containerMio bg-white">
 
       <Navbar />
 
-      <div className="seccion1">
-        <p className='text-white d-flex align-items-center justify-content-center vh-100 font-size-5 fw-bold fs-1'>Gintita un proyecto hecho realidad</p>
+      <div className="seccion1" id='inicio'>
+        <div className="d-flex flex-column align-items-center justify-content-center vh-100">
+          <p className='text-white font-size-5 fw-bold fs-1 mt-5 pt-5'>Gintita un proyecto hecho realidad</p>
+          <a href="#nosotros">
+            <img className='' width={75} src={Flecha} alt="" />
+          </a>
+        </div>
       </div>
       
-      <div className="seccion2 row text-center">
+      <div className="seccion2 row text-center mt-5" id='nosotros'>
         <div className='col-md-6'>
           <h2>Gintita</h2>
           <div className='mt-5'>
@@ -45,36 +51,17 @@ function App() {
         </div>
       </div>
 
-      {/* <div className="seccion3">
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src={pintita} class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={pintita} class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={pintita} class="d-block w-100" alt="..." />
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div> */}
+      <div className="seccion3 text-white text-center pt-3 pb-3 mt-5">
+        <h2 className='fs-4'>Coordinador</h2>
+        <p className='mt-3 fs-3 dc'>Daniel Cabrera</p>
+        <button >Contacto</button>
+      </div>
 
-      <div className="seccion4 text-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0T7TsrUGB9k?si=LYbnzNGhmLpZdU53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+      <div className="seccion4 text-center mt-5 mb-5">
+        <iframe width="80%" height="315" src="https://www.youtube.com/embed/0T7TsrUGB9k?si=LYbnzNGhmLpZdU53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
       </div>
 
       <Novedades />
-
 
       <Footer />
     </div>
