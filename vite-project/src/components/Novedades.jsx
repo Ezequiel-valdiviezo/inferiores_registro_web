@@ -5,7 +5,7 @@ function Novedades(){
 
     return(
         <div className="text-center" id="novedades">
-        <h2>Novedades</h2>
+        <h2 className='tituloh2'>Novedades</h2>
         <div className="d-flex flex-wrap p-5">
             <div className="col-12 col-lg-6 ">
                 <div className="card m-2">
