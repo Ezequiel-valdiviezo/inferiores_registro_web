@@ -18,7 +18,7 @@ function App() {
       <Navbar />
 
       <div className="seccion1" id='inicio'>
-        <div className="d-flex flex-column align-items-center justify-content-center vh-100">
+        <div className="d-flex flex-column align-items-center justify-content-center contenido">
           <p className='text-white text-center font-size-5 fw-bold fs-1 mt-5 pt-5'>Gintita un proyecto hecho realidad</p>
           <a href="#nosotros">
             <img className='' width={75} src={Flecha} alt="" />

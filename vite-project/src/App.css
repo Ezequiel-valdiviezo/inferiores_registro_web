@@ -6,8 +6,26 @@
   max-width: 1200px;
   margin: auto;
 }
-nav{
+
+header{
   background-color: rgb(0, 84, 50);
+}
+.gintitaTitulo{
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 700;
+  line-height: 1.2;
+}
+#somos{
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.vertical-line {
+  border-left: 2px solid #ace7aa; /* Ajusta el color y grosor de la línea según sea necesario */
+  height: 80px; /* Ajusta la altura según sea necesario */
+  margin: 0 10px; /* Ajusta el margen según sea necesario */
+}
+nav{
 }
 nav button{
   background-color: rgb(0, 84, 50);
@@ -20,16 +38,36 @@ nav button:hover{
   background-color: rgb(6, 45, 29);
   border: 2px solid rgb(17, 159, 4);
 }
-nav ul li a{
+
+nav ul li {
+  position: relative; /* Necesario para posicionar el pseudo-elemento relativo al li */
+}
+
+nav ul li a {
   cursor: pointer;
   margin: 0px 10px;
-  border-radius: 10px;
-  transition: background-color 0.5s ease;
+  position: relative; /* Necesario para posicionar el pseudo-elemento relativo al a */
+  text-decoration: none; /* Para remover cualquier subrayado */
 }
-nav ul li a:hover{
-  background-color: rgb(9, 58, 21);
-  border-bottom: 2px solid rgb(7, 215, 7);
-  padding-left: 5px;
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px; /* Ajusta esto según el espacio que desees entre el texto y la línea */
+  width: 0%;
+  height: 2px; /* Ajusta el grosor de la línea aquí */
+  background-color: rgb(255, 255, 255); /* Color de la línea */
+  transition: width 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+.logo{
+  background-color: rgb(0, 84, 50);
 }
 
 .tituloh2{
@@ -42,7 +80,11 @@ nav ul li a:hover{
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./assets/pintita.jpg');
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 55vh;
+}
+
+.seccion1 .contenido{
+  height: 70vh;
 }
 
 .seccion2 button{
