@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Novedades from './components/Novedades'
 import Flecha from './assets/flecha.png'
-import Pintita from './assets/pintita.jpg'
+import Instagram from './assets/instagram1.png'
+import Facebook from './assets/facebook1.png'
+import Youtube from './assets/youtube1.png'
 
 function App() {
 
@@ -62,6 +61,24 @@ function App() {
       </div>
 
       <Novedades />
+
+      <div className="seccion5 py-5 d-flex flex-column justify-content-center align-items-center">
+        <div>
+          <p id='somosgintita'>#SOMOSGINTITA</p>
+        </div>
+        <div class="d-flex align-items-center ">
+          {/* <p className="seguinos">Seguínos</p> */}
+          <a href="">
+            <img className="redSocial mx-2" src={Instagram} alt="instagram" width={60} />
+          </a>
+          <a href="">
+            <img className="redSocial mx-2" src={Facebook} alt="instagram" width={60} />
+          </a>
+          <a href="">
+             <img className="redSocial mx-2" src={Youtube} alt="instagram" width={60} />
+          </a>
+        </div>
+      </div>
 
       <Footer />
     </div>

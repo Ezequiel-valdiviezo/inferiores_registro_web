@@ -112,3 +112,14 @@ nav .redSocial:hover{
   background-color: rgb(6, 45, 29);
   border: 2px solid rgb(17, 159, 4);
 }
+
+.seccion5{
+  background-color: rgb(0, 84, 50);
+}
+
+#somosgintita{
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: italic;
+}
