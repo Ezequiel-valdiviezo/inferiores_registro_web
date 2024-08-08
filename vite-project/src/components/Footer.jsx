@@ -7,23 +7,13 @@ import Youtube from '../assets/youtube.png'
 function Footer(){
 
     return(
-        <footer className="bg-black d-flex justify-content-between align-items-center p-4">
+        <footer className="bg-black d-flex flex-column justify-content-center align-items-center pt-5">
             <div>
-                <img width='70%' src={Logo} alt="Logo Gintita" 
+                <img width={125} src={Logo} alt="Logo Gintita" 
                 className=""/>
             </div>
-            <div className="text-white">
-                <h2 id="contacto">Contacto</h2>
-                <p>+54 9 11 5445 5454</p>
-                <p>danielcabrera@gmail.com</p>
-            </div>
-            <div className="text-white">
-                <h2>Redes Sociales</h2>
-                <div className="d-flex justify-content-between align-items-center">
-                    <img src={Instagram} alt="instagram" width={45} />
-                    <img src={Facebook} alt="instagram" width={40} />
-                    <img src={Youtube} alt="instagram" width={50} />
-                </div>
+            <div>
+                <p className="text-white py-4">Sitio Oficial del Club Gintita. Todos los derechos reservados.</p>
             </div>
         </footer>
     )

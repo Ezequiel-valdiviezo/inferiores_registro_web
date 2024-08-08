@@ -69,13 +69,13 @@ function App() {
         <div class="d-flex align-items-center ">
           {/* <p className="seguinos">Seguínos</p> */}
           <a href="">
-            <img className="redSocial mx-2" src={Instagram} alt="instagram" width={60} />
+            <img className="redSocial mx-2" src={Instagram} alt="instagram" width={50} />
           </a>
           <a href="">
-            <img className="redSocial mx-2" src={Facebook} alt="instagram" width={60} />
+            <img className="redSocial mx-2" src={Facebook} alt="instagram" width={50} />
           </a>
           <a href="">
-             <img className="redSocial mx-2" src={Youtube} alt="instagram" width={60} />
+             <img className="redSocial mx-2" src={Youtube} alt="instagram" width={50} />
           </a>
         </div>
       </div>
