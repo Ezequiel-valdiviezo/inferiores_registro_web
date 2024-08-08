@@ -21,7 +21,7 @@ nav{
   font-size: 1.3rem;
 }
 .vertical-line {
-  border-left: 2px solid #ace7aa; /* Ajusta el color y grosor de la línea según sea necesario */
+  border-left: 2px solid #ffffff; /* Ajusta el color y grosor de la línea según sea necesario */
   height: 80px; /* Ajusta la altura según sea necesario */
   margin: 0 10px; /* Ajusta el margen según sea necesario */
 }
@@ -72,14 +72,20 @@ nav .redSocial:hover{
 }
 
 .seccion1{
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./assets/pintita.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.535)), url('./assets/pintita.jpg');
   background-size: cover;
   background-position: center;
-  height: 55vh;
+  height: 250px;
+  margin-bottom: 140px;
 }
 
 .seccion1 .contenido{
-  height: 50vh;
+  /* height: 50vh; */
+  padding-top: 100px;
+}
+
+.seccion1 img{
+  filter: drop-shadow(0 0 15px rgb(0, 0, 0));
 }
 
 .seccion2 button{

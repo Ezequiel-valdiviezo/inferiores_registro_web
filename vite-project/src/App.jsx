@@ -6,6 +6,8 @@ import Flecha from './assets/flecha.png'
 import Instagram from './assets/instagram1.png'
 import Facebook from './assets/facebook1.png'
 import Youtube from './assets/youtube1.png'
+import Pintita from './assets/logopng.png'
+
 
 function App() {
 
@@ -18,14 +20,12 @@ function App() {
 
       <div className="seccion1" id='inicio'>
         <div className="d-flex flex-column align-items-center justify-content-center contenido">
-          <p className='text-white text-center font-size-5 fw-bold fs-1 mt-5 pt-5'>Gintita un proyecto hecho realidad</p>
-          <a href="#nosotros">
-            <img className='' width={75} src={Flecha} alt="" />
-          </a>
+          <p className='text-white text-center font-size-5 fw-bold fs-1 gintitaProyecto'>Gintita un proyecto hecho realidad</p>
+          <img src={Pintita} alt="Bootstrap" width="130"/>
         </div>
       </div>
       
-      <div className="seccion2 row text-center mt-5" id='nosotros'>
+      <div className="seccion2 row text-center" id='nosotros'>
         <div className='col-md-6'>
           <h2 className='tituloh2'>Gintita</h2>
           <div className='mt-5 descripcionGintita px-5'>
