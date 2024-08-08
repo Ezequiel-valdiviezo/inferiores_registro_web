@@ -43,9 +43,15 @@ function Navbar(){
 
                 <div class="d-flex align-items-center ">
                     {/* <p className="seguinos">Seguínos</p> */}
-                    <img className="redSocial" src={Instagram} alt="instagram" width={45} />
-                    <img className="redSocial" src={Facebook} alt="instagram" width={45} />
-                    <img className="redSocial" src={Youtube} alt="instagram" width={45} />
+                    <a href="">
+                        <img className="redSocial" src={Instagram} alt="instagram" width={45} />
+                    </a>
+                    <a href="">
+                        <img className="redSocial" src={Facebook} alt="instagram" width={45} />
+                    </a>
+                    <a href="">
+                        <img className="redSocial" src={Youtube} alt="instagram" width={45} />
+                    </a>
                 </div>
             </div>
         </nav>
