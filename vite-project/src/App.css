@@ -125,6 +125,19 @@ nav .redSocial:hover{
   font-weight: 500;
 }
 
+.conceptosImg:hover{
+  transform: scale(1.04);
+  box-shadow:  0 0 15px 1px rgb(0, 84, 50);
+}
+
+.entrenamiento{
+  max-width: 800px;
+}
+
+.entrenamientoLista{
+  width: 270px;
+}
+
 .seccion5{
   background-color: rgb(0, 84, 50);
 }
