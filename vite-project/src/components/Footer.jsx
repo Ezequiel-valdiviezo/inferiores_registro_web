@@ -1,8 +1,5 @@
 import React from "react";
 import Logo from '../assets/logo.jpeg'
-import Instagram from '../assets/insta.webp'
-import Facebook from '../assets/facebook.png'
-import Youtube from '../assets/youtube.png'
 
 function Footer(){
 
