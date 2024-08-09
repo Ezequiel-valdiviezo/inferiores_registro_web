@@ -35,7 +35,7 @@ function App() {
           {/* <h2 className='tituloh2'>Gintita</h2> */}
           <div className='mt-5 px-5'>
             <p className='fs-5'>Somos un centro de capacitación y formación de jugadores. Los entrenamos y preparamos para salida a AFA y mejorar su rendimiento.</p>
-            <p className='fs-5'>Creado por Daniel Cabrera, director técnico y coaching deportivo, el 18 de octubre del 2020</p>
+            <p className='fs-5'>Creado el 18 de octubre del 2020, por Daniel Cabrera, director técnico y coaching deportivo.</p>
             <button>Contacto</button>
             <p className='text-danger mt-2'>*Los entrenamientos se realizan por la mañana</p>
           </div>
@@ -68,10 +68,21 @@ function App() {
           </div>
 
         <div className="seccion4 text-center mt-5 pt-5 mb-5">
-          <iframe width="80%" height="315" src="https://www.youtube.com/embed/0T7TsrUGB9k?si=LYbnzNGhmLpZdU53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+          <iframe width="80%" height="450" src="https://www.youtube.com/embed/0T7TsrUGB9k?si=LYbnzNGhmLpZdU53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
         </div>
 
-          <div className='text-center'>
+  
+      
+
+      <div className="seccion3 text-white text-center pt-3 pb-3 mt-5 mb-5">
+        <h2 className='fs-4'>Coordinador</h2>
+        <p className='mt-3 fs-3 dc'>Daniel Cabrera</p>
+        <button >Contacto</button>
+      </div>
+
+      <Novedades/>
+
+      <div className='text-center'>
           <h2 className='tituloh2 mt-5'>Nuestra ubicación</h2>
           <iframe
             title="Google Maps"
@@ -84,15 +95,6 @@ function App() {
             referrerPolicy="no-referrer-when-downgrade"
             />
             </div>
-      
-
-      <div className="seccion3 text-white text-center pt-3 pb-3 mt-5">
-        <h2 className='fs-4'>Coordinador</h2>
-        <p className='mt-3 fs-3 dc'>Daniel Cabrera</p>
-        <button >Contacto</button>
-      </div>
-
-      <Novedades />
 
       <div className="seccion5 py-5 d-flex flex-column justify-content-center align-items-center">
         <div>
