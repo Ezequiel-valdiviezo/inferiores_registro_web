@@ -43,28 +43,43 @@ function App() {
 
           <div className='text-center m-auto'>
             <h2 className='tituloh2 my-5'>Nuestros conceptos</h2>
-            <div className='d-flex flex-wrap px-5 justify-content-between'>
-              <div className='conceptosImg'>
-                <img src={Entrenar} alt="Bootstrap" width={350}/>
-              </div>
-              <div className='conceptosImg'>
-                <img src={Disfrutar} alt="Bootstrap" width={350}/>
-              </div>
-              <div className='conceptosImg'>
-                <img src={Transformar} alt="Bootstrap" width={350}/>
-              </div>
-            </div>
-            <div className='d-flex flex-wrap px-5 justify-content-between mt-5'>
-              <div className='conceptosImg'>
-                <img src={Motivar} alt="Bootstrap" width={350}/>
-              </div>
-              <div className='conceptosImg'>
-                <img src={Alcanzar} alt="Bootstrap" width={350}/>
-              </div>
-              <div className='conceptosImg'>
-                <img src={Evolucionar} alt="Bootstrap" width={350}/>
-              </div>
-            </div>
+            <div className='container'>
+  <div className='row'>
+    <div className='col-12 col-md-6 col-lg-4 mb-4'>
+      <div className='conceptosImg'>
+        <img src={Entrenar} alt="Entrenar" className='img-fluid' />
+      </div>
+    </div>
+    <div className='col-12 col-md-6 col-lg-4 mb-4'>
+      <div className='conceptosImg'>
+        <img src={Disfrutar} alt="Disfrutar" className='img-fluid' />
+      </div>
+    </div>
+    <div className='col-12 col-md-6 col-lg-4 mb-4'>
+      <div className='conceptosImg'>
+        <img src={Transformar} alt="Transformar" className='img-fluid' />
+      </div>
+    </div>
+  </div>
+  <div className='row mt-4'>
+    <div className='col-12 col-md-6 col-lg-4 mb-4'>
+      <div className='conceptosImg'>
+        <img src={Motivar} alt="Motivar" className='img-fluid' />
+      </div>
+    </div>
+    <div className='col-12 col-md-6 col-lg-4 mb-4'>
+      <div className='conceptosImg'>
+        <img src={Alcanzar} alt="Alcanzar" className='img-fluid' />
+      </div>
+    </div>
+    <div className='col-12 col-md-6 col-lg-4 mb-4'>
+      <div className='conceptosImg'>
+        <img src={Evolucionar} alt="Evolucionar" className='img-fluid' />
+      </div>
+    </div>
+  </div>
+</div>
+
           </div>
 
         <div className="seccion4 text-center mt-5 pt-5 mb-5">
@@ -117,9 +132,9 @@ function App() {
       </div>
       
 
-      <div className="seccion3 text-white text-center pt-3 pb-3 mt-5 mb-5">
+      <div className="seccion3 text-white text-center py-5 my-5">
         <h2 className='fs-4'>Coordinador</h2>
-        <p className='mt-3 fs-3 dc'>Daniel Cabrera</p>
+        <p className='fs-3 dc'>Daniel Cabrera</p>
         <button >Contacto</button>
       </div>
 
