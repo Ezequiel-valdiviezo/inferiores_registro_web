@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(13, 48, 15);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+form{
+    width: 500px;
+    margin: auto;
+    background-color: rgb(20, 128, 39);
+    padding: 25px;
+    border-radius: 15px;
+}
