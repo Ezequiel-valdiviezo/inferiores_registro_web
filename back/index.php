@@ -47,13 +47,13 @@
                 <div class="d-flex align-items-center ">
                     <!-- <p class="seguinos">Seguínos</p> -->
                     <a href="">
-                        <img class="redSocial" src="./img/instagram1.png" alt="instagram" width={45} />
+                        <img class="redSocial" src="./img/instagram1.png" alt="instagram" width="45" />
                     </a>
                     <a href="">
-                        <img class="redSocial" src="./img/facebook1.png" alt="facebook" width={45} />
+                        <img class="redSocial" src="./img/facebook1.png" alt="facebook" width="45" />
                     </a>
                     <a href="">
-                        <img class="redSocial" src="./img/youtube1.png" alt="youtube" width={45} />
+                        <img class="redSocial" src="./img/youtube1.png" alt="youtube" width="45" />
                     </a>
                 </div>
             </div>
@@ -174,7 +174,23 @@
     <button >Contacto</button>
   </div>
 
-  <h2>Novedades</h2>
+  <div class="text-center" id="novedades">
+            <h2 class='tituloh2'>Novedades</h2>
+            <div class="d-flex flex-wrap justify-content-center">
+                    <div class="card mx-2 my-2" style="width: 18rem" key="index">
+                        <img src="./img/pintita.jpg" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Novedad</h5>
+                            <button
+                                class="btn btn-primary"
+                            >
+                                Leer más
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
 
   <div class="seccion5 py-5 d-flex flex-column justify-content-center align-items-center mt-5">
     <div>
@@ -183,20 +199,20 @@
     <div class="d-flex align-items-center ">
       <!-- <p class="seguinos">Seguínos</p> -->
       <a href="">
-        <img class="redSocial mx-2" src="./img/instagram1.png" alt="instagram" width={50} />
+        <img class="redSocial mx-2" src="./img/instagram1.png" alt="instagram" width="50" />
       </a>
       <a href="">
-        <img class="redSocial mx-2" src="./img/facebook1.png" alt="instagram" width={50} />
+        <img class="redSocial mx-2" src="./img/facebook1.png" alt="instagram" width="50" />
       </a>
       <a href="">
-         <img class="redSocial mx-2" src="./img/youtube1.png" alt="instagram" width={50} />
+         <img class="redSocial mx-2" src="./img/youtube1.png" alt="instagram" width="50" />
       </a>
     </div>
   </div>
 
   <footer class="bg-black d-flex flex-column justify-content-center align-items-center pt-5">
             <div>
-                <img width={125} src="./img/logopng.png" alt="Logo Gintita" 
+                <img width="125" src="./img/logopng.png" alt="Logo Gintita" 
                 class=""/>
             </div>
             <div>
