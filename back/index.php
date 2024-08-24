@@ -25,7 +25,7 @@
                 <label for="floatingPassword">Constraseña</label>
             </div>
             
-            <button class="btn btn-primary w-100 py-2 mt-4" type="submit">Inciar sesión</button>
+            <button class="iniciar w-100 py-2 mt-4" type="submit">Inciar sesión</button>
         </form>
 
     </main>
