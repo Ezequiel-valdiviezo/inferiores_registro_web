@@ -1,35 +1,156 @@
-body{
-    /* background-color: rgb(13, 48, 15); */
-    background: linear-gradient(rgba(8, 38, 18, 0.907), rgba(8, 38, 18, 0.907)), url('../img/pintita.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-main{
-    height: 100vh;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-}
-form{
-    width: 500px;
+.fondo{
+    background-color: rgb(17, 32, 17);
+    /* background-image: url('./assets/logo.jpeg'); */
+  }
+  .containerMio{
+    max-width: 1200px;
     margin: auto;
-    background-color: rgb(26, 101, 38);
-    border: solid 3px rgb(6, 32, 6);
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px 1px green;
-}
-
-.iniciar{
-    background-color: rgb(164, 217, 164);
-    color: rgb(0, 0, 0);
-    border: solid 2px rgb(4, 17, 4);
-    border-radius: 15px;
-}
-.iniciar:hover{
-    background-color: rgb(12, 46, 12);
+  }
+  
+  nav{
+    background-color: rgb(0, 84, 50);
+  }
+  .gintitaTitulo{
+    font-size: 1.7rem;
     color: white;
-}
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  #somos{
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .vertical-line {
+    border-left: 2px solid #ffffff; /* Ajusta el color y grosor de la línea según sea necesario */
+    height: 80px; /* Ajusta la altura según sea necesario */
+    margin: 0 10px; /* Ajusta el margen según sea necesario */
+  }
+  
+  nav ul li {
+    position: relative; /* Necesario para posicionar el pseudo-elemento relativo al li */
+  }
+  
+  nav ul li a {
+    cursor: pointer;
+    margin: 0px 10px;
+    position: relative; /* Necesario para posicionar el pseudo-elemento relativo al a */
+    text-decoration: none; /* Para remover cualquier subrayado */
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px; /* Ajusta esto según el espacio que desees entre el texto y la línea */
+    width: 0%;
+    height: 2px; /* Ajusta el grosor de la línea aquí */
+    background-color: rgb(255, 255, 255); /* Color de la línea */
+    transition: width 0.5s ease-in-out;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .seguinos{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  nav .redSocial:hover{
+    transform: scale(1.2);
+    margin: 0 10px;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.722));
+  }
+  
+  .tituloh2{
+    font-size: 3rem;
+    color: rgb(0, 84, 50);
+    font-weight: bold;
+  }
+  
+  .seccion1{
+    background: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.535)), url('../img/pintita.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    margin-bottom: 120px;
+  }
+  
+  .seccion1 .contenido{
+    /* height: 50vh; */
+    padding-top: 100px;
+  }
+  
+  .seccion1 img{
+    filter: drop-shadow(0 0 15px rgb(0, 0, 0));
+  }
+  
+  .seccion2{
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .seccion2 button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 84, 50);
+    color: rgb(0, 0, 0);
+  }
+  .seccion2 button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px rgba(5, 64, 40, 0.263);
+    font-weight: 500;
+  }
+  
+  .seccion3 {
+    background: linear-gradient(rgba(1, 24, 13, 0.759), rgba(1, 24, 13, 0.759)), url('../img/a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    /* height: 250px; */
+  }
+  
+  
+  .seccion3 .dc{
+    font-weight: bold;
+  }
+  .seccion3 button{
+    background-color: rgb(0, 84, 50);
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .seccion3 button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px rgb(3, 28, 18);
+    font-weight: 500;
+  }
+  
+  .conceptosImg:hover{
+    transform: scale(1.04);
+    box-shadow:  0 0 15px 1px rgb(0, 84, 50);
+  }
+  
+  .entrenamiento{
+    max-width: 800px;
+  }
+  
+  .entrenamientoLista{
+    width: 270px;
+  }
+  
+  .seccion5{
+    background-color: rgb(0, 84, 50);
+  }
+  
+  #somosgintita{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: italic;
+  }

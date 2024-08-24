@@ -1,0 +1,35 @@
+body{
+    /* background-color: rgb(13, 48, 15); */
+    background: linear-gradient(rgba(8, 38, 18, 0.907), rgba(8, 38, 18, 0.907)), url('../img/pintita.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+}
+form{
+    width: 500px;
+    margin: auto;
+    background-color: rgb(26, 101, 38);
+    border: solid 3px rgb(6, 32, 6);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px 1px green;
+}
+
+.iniciar{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(4, 17, 4);
+    border-radius: 15px;
+}
+.iniciar:hover{
+    background-color: rgb(19, 79, 19);
+    color: white;
+}
