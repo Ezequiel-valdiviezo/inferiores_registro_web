@@ -19,7 +19,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 </head>
 <body>
     <div class="container text-center pt-3">
-        <img src="./img/logopng.png" width="150px" alt="">
+        <img src="./img/logopng.webp" width="150px" alt="">
         <h1 class="text-white">Bienvenido al panel administrador</h1>
         <p class="text-white">Has iniciado sesión con éxito.</p>
         <a href="./actions/logout.php" class="boton">Cerrar sesión</a>

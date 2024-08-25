@@ -72,7 +72,7 @@
   }
   
   .seccion1{
-    background: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.535)), url('../img/pintita.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.535)), url('../img/pintita.webp');
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -107,7 +107,7 @@
   }
   
   .seccion3 {
-    background: linear-gradient(rgba(1, 24, 13, 0.759), rgba(1, 24, 13, 0.759)), url('../img/a.jpg');
+    background: linear-gradient(rgba(1, 24, 13, 0.759), rgba(1, 24, 13, 0.759)), url('../img/a.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -141,7 +141,7 @@
   }
   
   .entrenamientoLista{
-    width: 270px;
+    width: 290px;
   }
   
   .seccion5{

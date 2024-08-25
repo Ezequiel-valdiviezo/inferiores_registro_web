@@ -1,6 +1,6 @@
 body{
     /* background-color: rgb(13, 48, 15); */
-    background: linear-gradient(rgba(8, 38, 18, 0.907), rgba(8, 38, 18, 0.907)), url('../img/pintita.jpg');
+    background: linear-gradient(rgba(8, 38, 18, 0.907), rgba(8, 38, 18, 0.907)), url('../img/pintita.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

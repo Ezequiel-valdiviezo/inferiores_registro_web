@@ -12,7 +12,7 @@
 
         <form class="m-1" action="actions/login.php" method="POST">
             <div class="text-center">
-                <img class="mb-4" src="./img/logopng.png" alt="" width="150">
+                <img class="mb-4" src="./img/logopng.webp" alt="" width="150">
             </div>
             <h1 class="h3 mb-3 fw-bold text-center text-white">Por favor iniciar sesión</h1>
             

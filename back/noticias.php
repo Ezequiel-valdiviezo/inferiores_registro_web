@@ -20,7 +20,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <body>
     <div class="container text-center pt-3">
         <div class="mb-3">
-            <img src="./img/logopng.png" width="150px" alt="">
+            <img src="./img/logopng.webp" width="150px" alt="">
         </div>
         <a href="./actions/logout.php" class="boton">Cerrar sesión</a>
         <a href="./home.php" class="boton">Volver atrás</a>
