@@ -1,5 +1,5 @@
 <?php
-$phoneNumber = "1137624887"; // Reemplaza con el número de teléfono al que deseas enviar el mensaje
+$phoneNumber = "541137624887"; // Reemplaza con el número de teléfono al que deseas enviar el mensaje
 $message = "Hola, estoy interesado en más información sobre el entrenamiento en Gintita."; // Mensaje personalizado
 
 // Codifica el mensaje para URL
@@ -95,34 +95,34 @@ $whatsappUrl = "https://wa.me/{$phoneNumber}?text={$encodedMessage}";
         <h2 class='tituloh2 my-5'>Nuestros conceptos</h2>
         <div class='container'>
 <div class='row'>
-<div class='col-12 col-md-6 col-lg-4 mb-4'>
+<div class='col-12 col-md-6 col-lg-4 mb-4 text-center m-auto'>
   <div class='conceptosImg'>
     <img src="./img/entrenar.webp" alt="Entrenar" class='img-fluid' />
   </div>
 </div>
-<div class='col-12 col-md-6 col-lg-4 mb-4'>
+<div class='col-12 col-md-6 col-lg-4 mb-4 text-center m-auto'>
   <div class='conceptosImg'>
     <img  src="./img/disfrutar.webp" alt="Disfrutar" class='img-fluid' />
   </div>
 </div>
-<div class='col-12 col-md-6 col-lg-4 mb-4'>
+<div class='col-12 col-md-6 col-lg-4 mb-4 text-center m-auto'>
   <div class='conceptosImg'>
     <img  src="./img/transformar.webp" alt="Transformar" class='img-fluid' />
   </div>
 </div>
 </div>
 <div class='row mt-4'>
-<div class='col-12 col-md-6 col-lg-4 mb-4'>
+<div class='col-12 col-md-6 col-lg-4 mb-4 text-center m-auto'>
   <div class='conceptosImg'>
     <img  src="./img/motivar.webp" alt="Motivar" class='img-fluid' />
   </div>
 </div>
-<div class='col-12 col-md-6 col-lg-4 mb-4'>
+<div class='col-12 col-md-6 col-lg-4 mb-4 text-center m-auto'>
   <div class='conceptosImg'>
     <img src="./img/alcanzar.webp" alt="Alcanzar" class='img-fluid' />
   </div>
 </div>
-<div class='col-12 col-md-6 col-lg-4 mb-4'>
+<div class='col-12 col-md-6 col-lg-4 mb-4 text-center m-auto'>
   <div class='conceptosImg'>
     <img  src="./img/evolucionar.webp" alt="Evolucionar" class='img-fluid' />
   </div>

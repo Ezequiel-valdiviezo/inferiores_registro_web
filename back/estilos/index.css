@@ -60,7 +60,6 @@
   }
   
   nav .redSocial:hover{
-    transform: scale(1.2);
     margin: 0 10px;
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.722));
   }
