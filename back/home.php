@@ -25,7 +25,12 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         <a href="./actions/logout.php" class="boton">Cerrar sesión</a>
 
         <div class="mt-5">
-            <h2 class="text-white mb-3">Crear noticias</h2>
+            <h2 class="text-white mb-3">Ver noticias</h2>
+            <a class="boton" href="./noticiasAdmin.php">Ver</a>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="text-white mb-3">Crear noticia</h2>
             <a class="boton" href="./noticias.php">Crear</a>
         </div>
     </div>

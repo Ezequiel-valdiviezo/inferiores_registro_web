@@ -80,7 +80,7 @@ $whatsappUrl = "https://wa.me/{$phoneNumber}?text={$encodedMessage}";
   <div class="seccion2 text-center" id='nosotros'>
       <!-- <h2 class='tituloh2'>Gintita</h2>  -->
       <div class='mt-5 px-5'>
-        <p class='fs-5'>Somos un centro de capacitación y formación de jugadores. Los entrenamos y preparamos para salida a AFA y mejorar su rendimiento.</p>
+        <p class='fs-5'>Somos un centro de captación y formación de jugadores. Los entrenamos y preparamos para salida a AFA y mejorar su rendimiento.</p>
         <p class='fs-5'>Creado el 18 de octubre del 2020, por Daniel Cabrera, director técnico y coaching deportivo.</p>
         <button>
         <a href="<?php echo $whatsappUrl; ?>" class="text-decoration-none text-black" target="_blank">
