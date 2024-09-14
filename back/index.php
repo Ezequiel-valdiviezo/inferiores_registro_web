@@ -257,7 +257,7 @@ $whatsappUrl = "https://wa.me/{$phoneNumber}?text={$encodedMessage}";
             </div>
             <div>
                 <p class="text-white text-center py-4">@Sitio Oficial del Club Gintita. Todos los derechos reservados.</p>
-                <a class="" href="./login.php">.</a>
+                <a class="" href="./admin/login.php">.</a>
             </div>
     </footer>
 </div>
