@@ -10,7 +10,7 @@
 <body>
     <main class="">
 
-        <form class="m-1" action="actions/login.php" method="POST">
+        <form class="m-1" action="../actions/login.php" method="POST">
             <div class="text-center">
                 <img class="mb-4" src="./img/logopng.webp" alt="" width="150">
             </div>

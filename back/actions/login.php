@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['email'] = $email;
 
         // Redirigir al usuario a la página de inicio
-        header("Location: ../home.php");
+        header("Location: ../admin/home.php");
         exit();
     } else {
         // Si las credenciales no coinciden, mostrar un mensaje de error

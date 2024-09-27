@@ -8,7 +8,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 }
 
 // Incluir la conexión a la base de datos
-include './actions/conexion.php';
+include '../actions/conexion.php';
 
 // Consultar todas las noticias
 $query = "SELECT * FROM noticias";
@@ -55,7 +55,7 @@ if ($result === false) {
                         <td><?php echo $row['titulo']; ?></td>
                         <td><?php echo $row['descripcion']; ?></td>
                         <td>
-                            <img src="uploads/<?php echo htmlspecialchars($row['imagen']); ?>" alt="Imagen de noticia" width="100px">
+                            <img src="../uploads/<?php echo htmlspecialchars($row['imagen']); ?>" alt="Imagen de noticia" width="100px">
                         </td>
                     </tr>
                     <?php endwhile; ?>
