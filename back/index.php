@@ -7,6 +7,21 @@ $encodedMessage = urlencode($message);
 
 // Construye la URL de WhatsApp
 $whatsappUrl = "https://wa.me/{$phoneNumber}?text={$encodedMessage}";
+
+
+
+// Incluir la conexión a la base de datos
+include './actions/conexion.php';
+
+// Consultar todas las noticias
+$query = "SELECT * FROM noticias";
+$result = $conn->query($query);
+
+// Verificar si se recuperaron noticias
+if ($result === false) {
+    die("Error en la consulta: " . $conn->error);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -191,44 +206,50 @@ $whatsappUrl = "https://wa.me/{$phoneNumber}?text={$encodedMessage}";
     </button>
   </div>
 
-  <div class="text-center" id="novedades">
+        <div class="text-center" id="novedades">
             <h2 class='tituloh2'>Noticias</h2>
             <div class="d-flex flex-wrap justify-content-center">
+
+                  <?php while ($row = $result->fetch_assoc()): ?>
                     <div class="card mx-2 my-2" style="width: 18rem" key="index">
-                        <img src="./img/pintita.webp" alt="" />
+                        <img src="./uploads/<?php echo htmlspecialchars($row['imagen']); ?>" alt="" />
                         <div class="card-body">
-                            <h5 class="card-title">Noticia</h5>
+                            <h5 class="card-title"><?php echo $row['titulo']; ?></h5>
                             <button
                                 class="btn btn-primary"
                                 data-bs-toggle="modal"
                                 data-bs-target="#noticiaModal"
-                                onclick="openModal('Noticia', './img/pintita.webp', 'Descripción de la noticia aquí.')"
+                                data-title="<?php echo htmlspecialchars($row['titulo']); ?>"
+                                data-image="./uploads/<?php echo htmlspecialchars($row['imagen']); ?>"
+                                data-description="<?php echo htmlspecialchars($row['descripcion']); ?>"
+                                onclick="openModal(this)"
                             >
                                 Leer más
                             </button>
                         </div>
                     </div>
+                    <?php endwhile; ?>
             </div>
         </div>
 
         <!-- Modal -->
-<div class="modal fade" id="noticiaModal" tabindex="-1" aria-labelledby="noticiaModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="noticiaModalLabel">Título de la Noticia</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="" id="modalImage" class="img-fluid mb-3" alt="">
-        <p id="modalDescription">Descripción de la noticia</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="modal fade" id="noticiaModal" tabindex="-1" aria-labelledby="noticiaModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="noticiaModalLabel">Título de la Noticia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="" id="modalImage" class="img-fluid mb-3" alt="">
+                <p id="modalDescription">Descripción de la noticia</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -265,9 +286,18 @@ $whatsappUrl = "https://wa.me/{$phoneNumber}?text={$encodedMessage}";
 </div>
 
 <script>
-function openModal(title, imageSrc, description) {
+function openModal(button) {
+    // document.getElementById('noticiaModalLabel').textContent = title;
+    // document.getElementById('modalImage').src = imageSrc;
+    // document.getElementById('modalDescription').textContent = description;
+     // Obtener los datos del botón clickeado
+    const title = button.getAttribute('data-title');
+    const image = button.getAttribute('data-image');
+    const description = button.getAttribute('data-description');
+    
+    // Insertar los datos en el modal
     document.getElementById('noticiaModalLabel').textContent = title;
-    document.getElementById('modalImage').src = imageSrc;
+    document.getElementById('modalImage').src = image;
     document.getElementById('modalDescription').textContent = description;
 }
 </script>

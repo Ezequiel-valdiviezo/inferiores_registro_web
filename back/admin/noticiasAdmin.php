@@ -34,7 +34,7 @@ if ($result === false) {
         <img src="./img/logopng.webp" width="150px" alt="">
         <h1 class="text-white">Panel de Administración de Noticias</h1>
         <p class="text-white">Has iniciado sesión con éxito.</p>
-        <a href="./actions/logout.php" class="btn btn-danger">Cerrar sesión</a>
+        <a href="../actions/logout.php" class="btn btn-danger">Cerrar sesión</a>
         <a href="./home.php" class="btn btn-success">Volver</a>
 
         <div class="mt-5">
@@ -46,6 +46,7 @@ if ($result === false) {
                         <th>Título</th>
                         <th>Descripción</th>
                         <th>Imagen</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,6 +58,7 @@ if ($result === false) {
                         <td>
                             <img src="../uploads/<?php echo htmlspecialchars($row['imagen']); ?>" alt="Imagen de noticia" width="100px">
                         </td>
+                        <td><button class="btn btn-danger">Eliminar</button></td>
                     </tr>
                     <?php endwhile; ?>
                 </tbody>
