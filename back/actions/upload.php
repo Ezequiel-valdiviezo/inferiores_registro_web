@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 echo "Noticia subida con éxito!";
                 // Redirigir a otra página si es necesario
                 // header("Location: home.php?success=true");
-                header("Location: ../home.php");
+                header("Location: ../admin/home.php");
             } else {
                 echo "Error al guardar la noticia: " . $stmt->error;
             }

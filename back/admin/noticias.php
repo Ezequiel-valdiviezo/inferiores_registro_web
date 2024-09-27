@@ -20,13 +20,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <body>
     <div class="container text-center pt-3">
         <div class="mb-3">
-            <img src="./img/logopng.webp" width="150px" alt="">
+            <img src="../img/logopng.webp" width="150px" alt="">
         </div>
         <a href="../actions/logout.php" class="boton">Cerrar sesión</a>
         <a href="./home.php" class="boton">Volver atrás</a>
         <h1 class="text-white mt-4">Crear Noticia</h1>
 
-        <form action="./actions/upload.php" method="POST" enctype="multipart/form-data" class="py-4">
+        <form action="../actions/upload.php" method="POST" enctype="multipart/form-data" class="py-4">
             <div class="mb-3">
                 <label for="titulo" class="form-label text-white">Título</label>
                 <input type="text" class="form-control" id="titulo" name="titulo" required>

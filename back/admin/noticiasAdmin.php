@@ -31,7 +31,7 @@ if ($result === false) {
 </head>
 <body>
     <div class="container text-center pt-3">
-        <img src="./img/logopng.webp" width="150px" alt="">
+        <img src="../img/logopng.webp" width="150px" alt="">
         <h1 class="text-white">Panel de Administración de Noticias</h1>
         <p class="text-white">Has iniciado sesión con éxito.</p>
         <a href="../actions/logout.php" class="btn btn-danger">Cerrar sesión</a>
@@ -58,7 +58,7 @@ if ($result === false) {
                         <td>
                             <img src="../uploads/<?php echo htmlspecialchars($row['imagen']); ?>" alt="Imagen de noticia" width="100px">
                         </td>
-                        <td><button class="btn btn-danger">Eliminar</button></td>
+                        <td><a href="../actions/delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar esta noticia?');">Eliminar</a></td>
                     </tr>
                     <?php endwhile; ?>
                 </tbody>
