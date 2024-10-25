@@ -287,10 +287,7 @@ if ($result === false) {
 
 <script>
 function openModal(button) {
-    // document.getElementById('noticiaModalLabel').textContent = title;
-    // document.getElementById('modalImage').src = imageSrc;
-    // document.getElementById('modalDescription').textContent = description;
-     // Obtener los datos del botón clickeado
+    // Obtener los datos del botón clickeado
     const title = button.getAttribute('data-title');
     const image = button.getAttribute('data-image');
     const description = button.getAttribute('data-description');
